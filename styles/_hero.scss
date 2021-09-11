@@ -1,0 +1,255 @@
+.hero {
+   // height: 75vh;
+   background-image: url('./../img/hero.jpg');
+   background-repeat: no-repeat;
+   background-position: top center; //image starts with...
+   background-size: cover;
+   // padding-bottom: 1rem;
+   @media (max-width: 1150px) {
+      height: 65vh;
+   }
+   @media (max-width: 1120px) {
+      height: 75vh;
+   }
+
+   @media (max-width: 650px) {
+      height: 70vh;
+   }
+
+   @media (max-width: 550px) {
+      height: 60vh;
+   }
+
+   @media (max-width: 420px) {
+      height: 50vh;
+   }
+
+   &__content {
+      // padding-top: 10rem;
+      padding-left: 10rem;
+      padding-right: 10rem;
+      padding-bottom: 2rem;
+
+      @media (max-width: 885px) {
+         padding-left: 2rem;
+         padding-right: 2rem;
+      }
+   }
+
+   &__heading {
+      font-family: 'Rajdhani';
+      padding-top: 15rem;
+      // padding-left: 10rem;
+      font-size: 5.5rem;
+      font-weight: 700;
+      line-height: 5rem;
+      text-transform: uppercase;
+      color: white;
+      max-width: 650px;
+
+      &--span {
+         color: $primary;
+      }
+
+      @media (max-width: 1150px) {
+         padding-top: 7rem;
+      }
+      @media (max-width: 650px) {
+         font-size: 4rem;
+      }
+
+      @media (max-width: 550px) {
+         font-size: 4rem;
+         padding-top: 4rem;
+      }
+
+      @media (max-width: 485px) {
+         font-size: 3rem;
+         line-height: 3rem;
+      }
+   }
+   &__subHeading {
+      // padding-left: 10rem;
+      font-size: 14px;
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+      text-transform: uppercase;
+      letter-spacing: 5px;
+
+      color: white;
+      @media (max-width: 650px) {
+         padding-top: 2rem;
+         padding-bottom: 2rem;
+      }
+      @media (max-width: 550px) {
+         font-size: 12px;
+         padding-top: 1.3rem;
+         padding-bottom: 5.5rem;
+      }
+      @media (max-width: 485px) {
+         letter-spacing: 3px;
+         font-size: 12px;
+         padding-top: 3rem;
+         padding-bottom: 1.5rem;
+      }
+   }
+
+   &__cta {
+      // margin-left: 10rem;
+      display: inline-block;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'Rajdhani';
+      font-weight: 700;
+      background-color: $primary;
+      padding: 1rem 4rem;
+      border-radius: 0;
+      transition: all 0.2s ease-in-out;
+      transform: skew(-20deg);
+      cursor: pointer;
+      &:hover {
+         transform: skew(0deg);
+      }
+      @media (max-width: 550px) {
+         font-size: 14px;
+
+         padding: 0.5rem 2rem;
+      }
+
+      &--btn {
+         color: #222222;
+         transition: all 0.2s ease-in-out;
+         display: inline-block;
+         transform: skew(20deg);
+
+         &:hover {
+            transform: skew(0deg);
+         }
+      }
+      // & :hover {
+      //    transform: skewX(110deg);
+      // }
+   }
+
+   &__support {
+      &--content {
+         &--list {
+            padding-top: 5rem;
+            gap: 1rem;
+            display: flex;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            // align-items: center;
+            justify-content: space-around;
+            justify-content: center;
+
+            @media (max-width: 1170px) {
+               gap: 0rem;
+            }
+            @media (max-width: 1127px) {
+               transform: scale(0.99);
+            }
+
+            @media (max-width: 1120px) {
+               display: grid;
+               gap: 1rem;
+               grid-template-columns: 1fr 1fr;
+               transform: scale(1);
+            }
+            @media (max-width: 585px) {
+               transform: scale(0.99);
+            }
+            @media (max-width: 579px) {
+               transform: scale(0.98);
+            }
+            @media (max-width: 574px) {
+               transform: scale(0.97);
+            }
+            @media (max-width: 567px) {
+               transform: scale(0.96);
+            }
+            @media (max-width: 565px) {
+               transform: scale(0.95);
+            }
+            @media (max-width: 555px) {
+               transform: scale(0.94);
+            }
+            @media (max-width: 550px) {
+               transform: scale(1);
+            }
+            @media (max-width: 650px) {
+               padding-top: 5rem;
+               padding-bottom: 1rem;
+            }
+            @media (max-width: 550px) {
+               display: grid;
+               grid-template-columns: 1fr;
+               border-right: none;
+               background-color: $secondary;
+               padding-top: 3rem;
+               padding-bottom: 3rem;
+               margin-top: 6rem;
+               gap: 3rem;
+            }
+            @media (max-width: 480px) {
+               margin-top: 5rem;
+               // padding-top: 3rem;
+               // padding: 3rem;
+               // gap: 3rem;
+            }
+            @media (max-width: 360px) {
+               margin-top: 3rem;
+            }
+         }
+      }
+
+      &--item {
+         color: white;
+         font-family: sans-serif;
+         font-size: 18px;
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 1rem;
+         padding-left: 2rem;
+
+         &:not(:last-child) {
+            border-right: 1px solid gray;
+
+            @media (max-width: 550px) {
+               border-right: none;
+            }
+         }
+
+         &:nth-child(2) {
+            @media (max-width: 1120px) {
+               border-right: none;
+            }
+         }
+         @media (max-width: 550px) {
+            gap: 1.2rem;
+            padding: none;
+         }
+
+         &--primary {
+            min-width: 200px;
+         }
+         &--secondary {
+            color: gray;
+            font-size: 14px;
+         }
+
+         &--wrapper {
+            display: grid;
+            align-items: center;
+         }
+         &--icon {
+            color: $primary;
+            font-size: 2.5rem;
+         }
+         //    &:hover{
+
+         // }
+      }
+   }
+}

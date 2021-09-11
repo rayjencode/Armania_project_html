@@ -1,0 +1,51 @@
+.widget {
+   padding-top: 3rem;
+   // padding-bottom: 20rem;
+   padding-bottom: 3rem;
+   background-color: $bg;
+   padding-left: 3rem;
+   padding-right: 3rem;
+   &__wrapper {
+      padding-top: 3rem;
+      border-top: 1px solid #e3e3e3;
+   }
+
+   &__logos {
+      justify-content: center;
+      &--list {
+         display: flex;
+         justify-content: space-evenly;
+         text-align: center;
+      }
+
+      &--item {
+         &--1 {
+         }
+         &--2 {
+            @media (max-width: 700px) {
+               display: none;
+            }
+         }
+         &--3 {
+            @media (max-width: 750px) {
+               display: none;
+            }
+         }
+         &--4 {
+            @media (max-width: 905px) {
+               display: none;
+            }
+         }
+         &--5 {
+            @media (max-width: 1250px) {
+               display: none;
+            }
+         }
+         &--6 {
+            @media (max-width: 1300px) {
+               display: none;
+            }
+         }
+      }
+   }
+}

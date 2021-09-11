@@ -1,0 +1,104 @@
+.stories {
+   padding-top: 0.5rem;
+   background-color: $bg;
+   padding-bottom: 4rem;
+
+   &__content {
+      display: grid;
+      grid-template-columns: 1fr;
+      text-align: center;
+      @media (max-width: 462px) {
+         margin-left: -1rem;
+      }
+   }
+   &__top {
+      font-size: 10.8rem;
+      font-family: 'Open Sans';
+      color: $primary;
+      padding-bottom: 5rem;
+      letter-spacing: -0.7rem;
+      margin-left: 1rem;
+   }
+
+   &__story {
+      padding-top: 2rem;
+      // text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+      @media (max-width: 555px) {
+         transform: scale(0.9);
+      }
+      @media (max-width: 520px) {
+         transform: scale(0.8);
+      }
+   }
+   &__storyWrapper {
+      width: 850px;
+      font-family: 'Rajdhani';
+      font-size: 2rem;
+      line-height: 3rem;
+      color: $grayDark;
+
+      @media (max-width: 900px) {
+         width: 650px;
+      }
+      @media (max-width: 680px) {
+         width: 500px;
+      }
+      @media (max-width: 585px) {
+         line-height: 2.5rem;
+      }
+      @media (max-width: 517px) {
+         width: 445px;
+      }
+      @media (max-width: 450px) {
+         width: 400px;
+      }
+      @media (max-width: 418px) {
+         width: 300px;
+      }
+   }
+
+   &__profilePhoto {
+      padding-top: 2rem;
+   }
+   &__profilePic {
+      border-radius: 50%;
+      height: 5.2rem;
+      width: 5.2rem;
+   }
+
+   &__name {
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      font-family: 'Open Sans';
+      font-weight: 600;
+      letter-spacing: 3px;
+      padding-top: 0.5rem;
+      color: $gray;
+      &:hover {
+         color: $primary;
+      }
+   }
+
+   &__endspan {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-left: -0.5rem;
+      &--1 {
+         font-size: 4.5rem;
+         color: black;
+         @media (max-width: 585px) {
+            margin-top: -2rem;
+         }
+      }
+      &--2 {
+         font-size: 4.5rem;
+         color: #e8e8e8;
+         @media (max-width: 585px) {
+            margin-top: -2rem;
+         }
+      }
+   }
+}

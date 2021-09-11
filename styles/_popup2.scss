@@ -1,0 +1,29 @@
+.popup2 {
+   display: none;
+   @media (max-width: 767px) {
+      display: block;
+   }
+
+   &__nav {
+      line-height: 1rem;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+
+      &--list {
+         display: flex;
+         justify-content: space-between;
+         padding-left: 2rem;
+         padding-right: 2rem;
+         padding-top: 0.5rem;
+      }
+      &--item {
+         text-align: center;
+         color: $gray;
+      }
+      &--icon {
+         font-size: 24px;
+      }
+      &--name {
+      }
+   }
+}

@@ -1,0 +1,106 @@
+.popup {
+   display: none;
+   //    display: flex;
+   line-height: 4rem;
+   float: initial;
+
+   @media (max-width: 768px) {
+      display: none;
+   }
+   .header {
+      //   width: fit-content;
+      &__logoWrapper {
+      }
+      &__logo {
+         width: 166px;
+      }
+      &__left {
+         clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+         //  margin-right: -10rem;
+         padding-right: 5.7rem;
+         background: $primary;
+         //  display: flex;
+         align-items: center;
+         padding-left: 5.7rem;
+
+         // padding-right: 10rem;
+      }
+
+      &__nav {
+         display: flex;
+         align-items: center;
+         padding-top: 1rem;
+         padding-bottom: 1rem;
+         //  width: fit-content;
+         &--mobile {
+            font-size: 25px;
+            cursor: pointer;
+            display: none;
+            &:hover {
+               color: $primary;
+            }
+            @media (max-width: 1200px) {
+               display: inline-block;
+            }
+         }
+         &--mobiles {
+            font-size: 25px;
+            cursor: pointer;
+            display: none;
+            &:hover {
+               color: $primary;
+            }
+            @media (max-width: 1200px) {
+               display: inline-block;
+               visibility: hidden;
+               opacity: 0;
+            }
+         }
+         &--list {
+            display: flex;
+            gap: 4rem;
+            padding-left: 4rem;
+            margin-left: 15rem;
+            @media (max-width: 1200px) {
+               display: none;
+            }
+         }
+         &--item {
+            font-family: 'Rajdhani', sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: $grayDark;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+               color: $primary;
+            }
+         }
+
+         &--action {
+            display: flex;
+            gap: 2rem;
+            position: absolute;
+            right: 0;
+
+            // padding-left: 55rem;
+
+            // @media (max-width: 1750px) {
+            //    margin-left: 45rem;
+            // }
+            &--icon {
+               font-size: 35px;
+               color: $grayDark;
+               cursor: pointer;
+               &:hover {
+                  color: $primary;
+               }
+               //    &:first-child {
+               //       margin-left: 55rem;
+               //    }
+            }
+         }
+      }
+   }
+}

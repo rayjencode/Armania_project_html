@@ -1,0 +1,197 @@
+.header {
+   display: grid;
+   grid-template-columns: 400px 1fr;
+
+   @media (max-width: 1480px) {
+      grid-template-columns: 200px 1fr;
+   }
+
+   @media (max-width: 930px) {
+      grid-template-columns: 1fr;
+   }
+
+   &__logoWrapper {
+      @media (max-width: 930px) {
+         margin: auto;
+         padding-top: 0.5rem;
+         padding-bottom: 0.5rem;
+      }
+   }
+   &__logo {
+      width: 166px;
+   }
+   &__left {
+      clip-path: polygon(0 0, 100% 0%, 85% 100%, 0% 100%);
+      margin-right: -15rem;
+      background: $primary;
+      display: flex;
+      align-items: center;
+      padding-left: 15rem;
+
+      @media (max-width: 1480px) {
+         padding-left: 7rem;
+      }
+
+      // padding-right: 10rem;
+
+      @media (max-width: 930px) {
+         padding-right: 0;
+         margin-right: 0;
+         clip-path: none;
+         padding-left: 0;
+      }
+   }
+   &__right {
+      // clip-path: polygon(3.2% 0, 100% 0%, 100% 100%, 0% 100%);
+      padding-left: 12rem;
+      @media (max-width: 930px) {
+         padding-left: 0;
+      }
+   }
+
+   &__top {
+      ////GIRRRRL
+      // clip-path: polygon(2% 0, 100% 0%, 100% 100%, 0% 100%);
+      background-color: $secondary;
+
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+
+      @media (max-width: 1150px) {
+         flex-direction: column;
+      }
+      @media (max-width: 930px) {
+         clip-path: none;
+         flex-direction: row;
+         justify-content: space-around;
+      }
+
+      &--promo {
+         color: white;
+         padding-left: 4rem;
+
+         @media (max-width: 1050px) {
+            padding-left: 0;
+         }
+         &--span {
+            color: $primary;
+         }
+      }
+
+      &--login {
+         display: flex;
+         gap: 1rem;
+         color: white;
+         padding-right: 10rem;
+
+         @media (max-width: 1480px) {
+            padding-right: 7rem;
+         }
+         @media (max-width: 1050px) {
+            padding-right: 0;
+         }
+         @media (max-width: 560px) {
+            padding-left: 0;
+            display: none;
+         }
+         &--signin {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+         }
+      }
+   }
+
+   &__nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+
+      &--mobile {
+         font-size: 25px;
+         cursor: pointer;
+         display: none;
+         @media (max-width: 1240px) {
+            display: block;
+            margin-left: 2rem;
+         }
+      }
+
+      // @media (max-width: 1240px) {
+      //    justify-content: flex-end;
+      // }
+      &--list {
+         display: flex;
+         gap: 4rem;
+
+         padding-left: 4rem;
+         @media (max-width: 1240px) {
+            display: none;
+         }
+         // @media (max-width: 1480px) {
+         //    display: none;
+         // }
+      }
+      &--item {
+         font-family: 'Rajdhani', sans-serif;
+         font-weight: 700;
+         font-size: 20px;
+         color: $grayDark;
+         text-transform: uppercase;
+         cursor: pointer;
+         transition: all 0.3s ease-in-out;
+         &:hover {
+            color: $primary;
+         }
+      }
+
+      &--action {
+         display: flex;
+         gap: 3rem;
+         align-items: center;
+         padding-right: 10rem;
+         @media (max-width: 1480px) {
+            padding-right: 7rem;
+         }
+         @media (max-width: 930px) {
+            padding-right: 2rem;
+         }
+         &--icon {
+            font-size: 35px;
+            color: $grayDark;
+            cursor: pointer;
+            &:hover {
+               color: $primary;
+            }
+         }
+      }
+
+      &--hotline {
+         display: flex;
+         gap: 3rem;
+         align-items: center;
+         @media (max-width: 475px) {
+            display: none;
+         }
+         &--number {
+            color: $primary;
+            font-family: 'Rajdhani', sans-serif;
+            font-size: 15px;
+            font-weight: 700;
+         }
+         &--icon {
+            font-size: 35px;
+            color: $grayDark;
+         }
+         &--wrapper {
+            display: flex;
+            flex-direction: column;
+         }
+      }
+   }
+}

@@ -1,0 +1,277 @@
+.bannerMid {
+   // padding-top: 1rem;
+   // padding-bottom: 25rem;
+   margin-left: auto;
+   margin-right: auto;
+   overflow: hidden;
+   padding-bottom: 10rem;
+   //765
+   &__wrapper {
+      display: grid;
+      grid-template-columns: 700px 1fr;
+      justify-content: center;
+      @media (max-width: 1500px) {
+         grid-template-columns: 600px 1fr;
+      }
+      @media (max-width: 1400px) {
+         grid-template-columns: 500px 1fr;
+      }
+      // @media (max-width: 765px) {
+      //    overflow: hidden;
+      // }
+      &:hover .bannerMid__cta {
+         transform: skew(0deg);
+         // overflow: hidden;
+         &--btn {
+            transform: skew(0deg);
+         }
+      }
+      &:hover .bannerMid__right--hero {
+         transition: all 0.2s ease-in-out;
+         transform: translateX(-5rem);
+         // overflow: hidden;
+         @media (max-width: 1500px) {
+            transform: translateX(-7rem);
+         }
+         @media (max-width: 1000px) {
+            transform: translateX(-9.5rem);
+         }
+      }
+
+      @media (max-width: 500px) {
+         transform: scale(0.9);
+         padding-right: 2.5rem;
+      }
+
+      @media (max-width: 480px) {
+         &--overlay {
+            transition: all 0.1s ease-in-out;
+            top: 0;
+            background: $secondary;
+            opacity: 0.4;
+            position: absolute;
+            height: 110%;
+            width: 150%;
+            clip-path: polygon(
+               20% 17%,
+               30% 0,
+               100% 0,
+               100% 100%,
+               0 100%,
+               0 17%
+            );
+            @media (max-width: 365px) {
+               clip-path: polygon(
+                  30% 17%,
+                  45% 0,
+                  100% 0,
+                  100% 100%,
+                  0 100%,
+                  0 17%
+               );
+            }
+         }
+      }
+   }
+
+   &__leftWrapper {
+      background-color: $secondary;
+      margin-right: -50rem;
+      clip-path: polygon(0 10%, 100% 10%, 100% 100%, 0% 100%);
+      @media (max-width: 765px) {
+         background-color: transparent;
+         background-image: url(../img/banner-mid.jpg);
+         transition: all 0.4s ease-in-out;
+         &:hover {
+            transition: all 0.4s ease-in-out;
+         }
+      }
+      @media (max-width: 480px) {
+         .bannerMid__cta {
+            transition: all;
+            margin-top: -0.5rem;
+            border: 2px solid white;
+            background-color: transparent;
+         }
+         .bannerMid__cta--btn {
+            // color: $grayDark;
+            font-size: 1.6rem;
+            color: white;
+         }
+      }
+   }
+
+   &__left {
+      padding-left: 16rem;
+      @media (max-width: 1500px) {
+         padding-left: 5rem;
+      }
+      @media (max-width: 1001px) {
+         padding: 1rem;
+         transform: scale(0.8);
+      }
+      @media (max-width: 1001px) {
+      }
+      margin-right: 60rem;
+      @media (max-width: 765px) {
+         padding-bottom: 10rem;
+         padding: none;
+         margin-left: 0;
+      }
+      @media (max-width: 480px) {
+         padding-left: 3.2rem;
+         padding-top: 2.5rem;
+      }
+      @media (max-width: 415px) {
+         margin-left: auto;
+         margin-right: auto;
+      }
+      @media (max-width: 365px) {
+         padding-left: 6rem;
+         padding-top: 4.5rem;
+      }
+   }
+   &__heading {
+      padding-top: 10rem;
+      font-family: 'Rajdhani';
+      font-size: 2.8rem;
+      line-height: 1.25;
+      width: 450px;
+      text-transform: uppercase;
+
+      color: white;
+      &--span {
+         color: $primary;
+      }
+      @media (max-width: 765px) {
+         padding-top: 3rem;
+         margin-left: -2rem;
+      }
+
+      @media (max-width: 480px) {
+         padding-top: 0;
+         margin-top: 3rem;
+         font-size: 3.4rem;
+         line-height: 2.5rem;
+      }
+      @media (max-width: 430px) {
+         margin-left: 0rem;
+      }
+      @media (max-width: 415px) {
+         margin-left: -5.5rem;
+      }
+      @media (max-width: 365px) {
+         font-size: 3rem;
+         width: 320px;
+      }
+   }
+
+   &__subHeading {
+      padding-top: 2rem;
+
+      font-size: 1rem;
+      color: white;
+      padding-bottom: 4rem;
+      @media (max-width: 1001px) {
+         font-size: 1.4rem;
+         width: 420px;
+      }
+      @media (max-width: 765px) {
+         margin-left: -2rem;
+      }
+      @media (max-width: 480px) {
+         font-size: 1.9rem;
+         width: 400px;
+      }
+      @media (max-width: 430px) {
+         margin-left: 0rem;
+      }
+      @media (max-width: 415px) {
+         margin-left: -5.5rem;
+      }
+      @media (max-width: 365px) {
+         font-size: 1.6rem;
+         width: 320px;
+      }
+   }
+   &__right {
+      padding-left: 15rem;
+      transition: all 0.3s ease-in-out;
+      overflow: hidden;
+      @media (max-width: 1000px) {
+         padding-left: 5rem;
+      }
+      @media (max-width: 1300px) {
+         margin-left: -12rem;
+      }
+      @media (max-width: 850px) {
+         margin-left: -1rem;
+      }
+      @media (max-width: 848px) {
+         margin-left: -12rem;
+      }
+      @media (max-width: 765px) {
+         display: none;
+      }
+
+      &--heroWrapper {
+         transform: scale(1.1);
+         clip-path: polygon(22% 0, 100% 0%, 100% 100%, 0% 100%);
+
+         @media (max-width: 1200px) {
+            clip-path: polygon(18% 0, 100% 0%, 100% 100%, 0% 100%);
+         }
+      }
+      &--hero {
+         width: max-content;
+         transform: translateX(0rem);
+         transition: all 0.3s;
+         @media (max-width: 1500px) {
+            transform: translateX(-5rem);
+         }
+         @media (max-width: 1050px) {
+            transform: translateX(-8rem);
+         }
+      }
+   }
+
+   &__cta {
+      display: inline-block;
+      border-radius: 10px;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: 'Rajdhani';
+      font-weight: 700;
+      background-color: $primary;
+      padding: 0.5rem 4rem;
+      border-radius: 0;
+      transform: skewX(-20deg);
+      cursor: pointer;
+      transition: all 0.2s ease-in-out;
+      overflow: hidden;
+      &--btn {
+         color: #222222;
+         transition: all 0.2s ease-in-out;
+         transform: skew(20deg);
+         display: inline-block;
+      }
+      @media (max-width: 765px) {
+         margin-left: -2rem;
+      }
+      @media (max-width: 480px) {
+         font-size: 2rem;
+      }
+      @media (max-width: 430px) {
+         margin-left: 0rem;
+      }
+      @media (max-width: 415px) {
+         margin-left: -5.5rem;
+      }
+      // @media (max-width: 365px) {
+      //    // transform: scale(0);
+      //    // transform: skew(0deg);
+      //    // transform: skewX(-20deg);
+
+      // }
+   }
+}
